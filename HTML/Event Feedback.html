@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Phone Number:
+<input type="text" onblur="validatePhone()"
+id="phone">
+
+<br><br>
+
+Select Event:
+
+<select onchange="showFee()" id="event">
+
+<option>Select</option>
+<option value="200">Music</option>
+<option value="300">Sports</option>
+
+</select>
+
+<p id="fee"></p>
+
+<img src="event.jpg"
+width="150"
+ondblclick="enlarge(this)">
+
+<br><br>
+
+<textarea id="feedback"
+onkeyup="countChar()">
+</textarea>
+
+<p id="count"></p>
+
+<button onclick="confirmMsg()">
+Submit
+</button>
+
+<script>
+
+function validatePhone(){
+
+let phone=
+document.getElementById("phone").value;
+
+if(phone.length!=10){
+alert("Invalid Phone Number");
+}
+}
+
+function showFee(){
+
+let fee=
+document.getElementById("event").value;
+
+document.getElementById("fee").innerHTML=
+"Event Fee = ₹"+fee;
+}
+
+function confirmMsg(){
+alert("Feedback Submitted");
+}
+
+function enlarge(img){
+img.style.width="300px";
+}
+
+function countChar(){
+
+let len=
+document.getElementById("feedback").value.length;
+
+document.getElementById("count").innerHTML=
+"Characters: "+len;
+}
+
+</script>
+
+</body>
+</html>

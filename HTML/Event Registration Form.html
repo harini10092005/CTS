@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+
+form{
+width:400px;
+padding:20px;
+border:2px solid black;
+background-color:lightgray;
+}
+
+</style>
+</head>
+
+<body>
+
+<form onsubmit="showMsg()">
+
+<input type="text"
+placeholder="Enter Name"
+required
+autofocus>
+
+<br><br>
+
+<input type="email"
+placeholder="Enter Email"
+required>
+
+<br><br>
+
+<input type="date" required>
+
+<br><br>
+
+<select required>
+<option>Select Event</option>
+<option>Music</option>
+<option>Sports</option>
+<option>Workshop</option>
+</select>
+
+<br><br>
+
+<textarea
+placeholder="Enter Message">
+</textarea>
+
+<br><br>
+
+<button type="submit">
+Register
+</button>
+
+<br><br>
+
+<output id="msg"></output>
+
+</form>
+
+<script>
+
+function showMsg(){
+document.getElementById("msg").innerHTML =
+"Registration Successful!";
+}
+
+</script>
+
+</body>
+</html>

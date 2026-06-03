@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body onbeforeunload=
+"return 'Leave page?'">
+
+<video controls
+width="400"
+oncanplay="readyMsg()">
+
+<source src="video.mp4"
+type="video/mp4">
+
+</video>
+
+<p id="msg"></p>
+
+<script>
+
+function readyMsg(){
+
+document.getElementById("msg").innerHTML=
+"Video Ready To Play";
+
+}
+
+</script>
+
+</body>
+</html>
