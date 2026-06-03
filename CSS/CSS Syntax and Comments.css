@@ -1,0 +1,11 @@
+/* Styling Heading */
+h1{
+    color: green;
+    font-size: 36px;
+}
+
+/* Styling Paragraph */
+p{
+    color: gray;
+    font-size: 18px;
+}
